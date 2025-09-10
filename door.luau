@@ -404,7 +404,7 @@ if streamer_mode then
                             if not allSpace[i]:FindFirstChild("RenX") then
                                 local UIGradient : Instance = Instance.new("UIGradient")
                                 UIGradient.Name = "RenX"
-                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
+                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
                                 UIGradient.Rotation = 0
                                 UIGradient.Parent = allSpace[i]
                 
@@ -431,7 +431,7 @@ if streamer_mode then
                             if not allSpace[i]:FindFirstChild("RenX") then
                                 local UIGradient : Instance = Instance.new("UIGradient")
                                 UIGradient.Name = "RenX"
-                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
+                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
                                 UIGradient.Rotation = 0
                                 UIGradient.Parent = allSpace[i]
                 
@@ -458,7 +458,7 @@ if streamer_mode then
                             if not allSpace[i]:FindFirstChild("RenX") then
                                 local UIGradient : Instance = Instance.new("UIGradient")
                                 UIGradient.Name = "RenX"
-                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
+                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
                                 UIGradient.Rotation = 0
                                 UIGradient.Parent = allSpace[i]
                 
@@ -489,7 +489,7 @@ if streamer_mode then
                             if not descendant:FindFirstChild("RenX") then
                                 local UIGradient : Instance = Instance.new("UIGradient")
                                 UIGradient.Name = "RenX"
-                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
+                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
                                 UIGradient.Rotation = 0
                                 UIGradient.Parent = descendant
                 
@@ -516,7 +516,7 @@ if streamer_mode then
                             if not descendant:FindFirstChild("RenX") then
                                 local UIGradient : Instance = Instance.new("UIGradient")
                                 UIGradient.Name = "RenX"
-                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
+                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
                                 UIGradient.Rotation = 0
                                 UIGradient.Parent = descendant
                 
@@ -543,7 +543,7 @@ if streamer_mode then
                             if not descendant:FindFirstChild("RenX") then
                                 local UIGradient : Instance = Instance.new("UIGradient")
                                 UIGradient.Name = "RenX"
-                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
+                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
                                 UIGradient.Rotation = 0
                                 UIGradient.Parent = descendant
                 
