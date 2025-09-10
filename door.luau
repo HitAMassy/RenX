@@ -346,7 +346,7 @@ xpcall(function()
         local LoaderLib : {} = loadstring(game:HttpGet("https://raw.githubusercontent.com/HitAMassy/RenX/main/loader.luau"))()
         
         if not(mute_sound) then
-            task.spawn(function() playSound("loadsound", "https://github.com/HitAMassy/RenX/raw/main/renxloadsound.mp3") end)
+            task.spawn(function() playSound("renxstartup", "https://github.com/HitAMassy/RenX/raw/main/renxloadsound.mp3") end)
         end
         LoaderLib:LoadInit({
             Color = Color3.fromRGB(255, 255, 255),
@@ -401,10 +401,10 @@ if streamer_mode then
                         allSpace[i].Text = string.gsub(allSpace[i].Text, messageTarget, messageChange)
                     
                         pcall(function()
-                            if not allSpace[i]:FindFirstChild("Ded") then
+                            if not allSpace[i]:FindFirstChild("RenX") then
                                 local UIGradient : Instance = Instance.new("UIGradient")
-                                UIGradient.Name = "Ded"
-                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 115)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+                                UIGradient.Name = "RenX"
+                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
                                 UIGradient.Rotation = 0
                                 UIGradient.Parent = allSpace[i]
                 
@@ -428,10 +428,10 @@ if streamer_mode then
                         allSpace[i].Text = string.gsub(allSpace[i].Text, messageTarget, messageChange)
         
                         pcall(function()
-                            if not allSpace[i]:FindFirstChild("Ded") then
+                            if not allSpace[i]:FindFirstChild("RenX") then
                                 local UIGradient : Instance = Instance.new("UIGradient")
-                                UIGradient.Name = "Ded"
-                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 115)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+                                UIGradient.Name = "RenX"
+                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
                                 UIGradient.Rotation = 0
                                 UIGradient.Parent = allSpace[i]
                 
@@ -455,10 +455,10 @@ if streamer_mode then
                         allSpace[i].Text = string.gsub(allSpace[i].Text, messageTarget, messageChange)
         
                         pcall(function()
-                            if not allSpace[i]:FindFirstChild("Ded") then
+                            if not allSpace[i]:FindFirstChild("RenX") then
                                 local UIGradient : Instance = Instance.new("UIGradient")
-                                UIGradient.Name = "Ded"
-                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 115)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+                                UIGradient.Name = "RenX"
+                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
                                 UIGradient.Rotation = 0
                                 UIGradient.Parent = allSpace[i]
                 
@@ -486,10 +486,10 @@ if streamer_mode then
                         descendant.Text = string.gsub(descendant.Text, messageTarget, messageChange)
         
                         pcall(function()
-                            if not descendant:FindFirstChild("Ded") then
+                            if not descendant:FindFirstChild("RenX") then
                                 local UIGradient : Instance = Instance.new("UIGradient")
-                                UIGradient.Name = "Ded"
-                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 115)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+                                UIGradient.Name = "RenX"
+                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
                                 UIGradient.Rotation = 0
                                 UIGradient.Parent = descendant
                 
@@ -513,10 +513,10 @@ if streamer_mode then
                         descendant.Text = string.gsub(descendant.Text, messageTarget, messageChange)
         
                         pcall(function()
-                            if not descendant:FindFirstChild("Ded") then
+                            if not descendant:FindFirstChild("RenX") then
                                 local UIGradient : Instance = Instance.new("UIGradient")
-                                UIGradient.Name = "Ded"
-                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 115)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+                                UIGradient.Name = "RenX"
+                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
                                 UIGradient.Rotation = 0
                                 UIGradient.Parent = descendant
                 
@@ -540,10 +540,10 @@ if streamer_mode then
                         descendant.Text = string.gsub(descendant.Text, messageTarget, messageChange)
                         
                         pcall(function()
-                            if not descendant:FindFirstChild("Ded") then
+                            if not descendant:FindFirstChild("RenX") then
                                 local UIGradient : Instance = Instance.new("UIGradient")
-                                UIGradient.Name = "Ded"
-                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 115)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+                                UIGradient.Name = "RenX"
+                                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
                                 UIGradient.Rotation = 0
                                 UIGradient.Parent = descendant
                 
