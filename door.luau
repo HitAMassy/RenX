@@ -165,7 +165,7 @@ end, function(err : string)
     warn(string.format("Convert json function error %s\n", err))
 end)
 
----------/// x2Neptune's Software ///---------
+---------/// RenX Software ///---------
 
 task.delay(6, function()
     xpcall(function()
@@ -346,7 +346,7 @@ xpcall(function()
         local LoaderLib : {} = loadstring(game:HttpGet("https://raw.githubusercontent.com/HitAMassy/RenX/main/loader.luau"))()
         
         if not(mute_sound) then
-            task.spawn(function() playSound("load", "https://github.com/HitAMassy/RenX/raw/main/load.mp3") end)
+            task.spawn(function() playSound("loadsound", "https://github.com/HitAMassy/RenX/raw/main/renxloadsound.mp3") end)
         end
         LoaderLib:LoadInit({
             Color = Color3.fromRGB(255, 255, 255),
