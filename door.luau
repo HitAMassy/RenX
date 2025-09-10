@@ -346,7 +346,7 @@ xpcall(function()
         local LoaderLib : {} = loadstring(game:HttpGet("https://raw.githubusercontent.com/HitAMassy/RenX/main/loader.luau"))()
         
         if not(mute_sound) then
-            task.spawn(function() playSound("windowstartup", "https://github.com/ZoiIntra/sound/raw/main/windows-xp-startup.mp3") end)
+            task.spawn(function() playSound("windowstartup", "https://github.com/HitAMassy/RenX/raw/main/load.mp3") end)
         end
         LoaderLib:LoadInit({
             Color = Color3.fromRGB(0, 255, 128),
