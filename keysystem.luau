@@ -682,7 +682,8 @@ redeemClick.MouseButton1Click:Connect(function()
     if status.code == "KEY_VALID" then
         createNotifyRow(notify, "Valid", Color3.fromRGB(0, 255, 82), "rbxassetid://14939475472", "Key Valid")
         getgenv().script_key = key
-        api.load_script()
+		screenGui:Destroy()
+        --api.load_script()
     elseif status.code == "KEY_HWID_LOCKED" then
         createNotifyRow(notify, "Invalid", Color3.fromRGB(255, 38, 18), "rbxassetid://14943813832", "Key linked to another HWID")
     elseif status.code == "KEY_INCORRECT" then
@@ -691,8 +692,3 @@ redeemClick.MouseButton1Click:Connect(function()
         createNotifyRow(notify, "Invalid", Color3.fromRGB(255, 38, 18), "rbxassetid://14943813832", status.message)
     end
 end)
-
-	if status.code == "KEY_VALID" then
-		wait(2)
-		ScreenGui:Destroy()
-	end
