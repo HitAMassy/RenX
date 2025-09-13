@@ -682,6 +682,7 @@ redeemClick.MouseButton1Click:Connect(function()
     if status.code == "KEY_VALID" then
         createNotifyRow(notify, "Valid", Color3.fromRGB(0, 255, 82), "rbxassetid://14939475472", "Key Valid")
         getgenv().script_key = key
+		wait(3)
 		screenGui:Destroy()
         --api.load_script()
     elseif status.code == "KEY_HWID_LOCKED" then
