@@ -691,3 +691,7 @@ redeemClick.MouseButton1Click:Connect(function()
         createNotifyRow(notify, "Invalid", Color3.fromRGB(255, 38, 18), "rbxassetid://14943813832", status.message)
     end
 end)
+
+	if status.code == "KEY_VALID" then
+		wait(2)
+		ScreenGui:Destroy()
