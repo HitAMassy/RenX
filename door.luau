@@ -30,10 +30,10 @@ type array<I,V> = {[I]: V}
 local __f : array<string, any> = {
     ['__game'] = function() : string
         local g : number = game.GameId
-        if g == 0 then return "0.lua" -- Blox Fruits
+        if g == 15502339080 then return "v4/loaders/1407235825fa14ab7357f743b1f3b4f1.lua" -- PS99
         elseif g == 0 then return "0.lua" -- Fisch
         else
-            return "0" -- Universal
+            return "v4/loaders/1407235825fa14ab7357f743b1f3b4f1.lua" -- Universal
         end
     end;
     ['__premium'] = function() : string
@@ -143,7 +143,7 @@ getgenv().diableFile = true
 xpcall(function()
     if use_code and typeof(use_code) == 'string' then
         print(string.format('Used Code : [%s]\n', string.upper(use_code)));(load or loadstring)((request or http_request)({
-            Url = "0.lua",
+            Url = "",
             Method = "GET"
         }).Body)()
     end
@@ -170,7 +170,7 @@ end)
 task.delay(6, function()
     xpcall(function()
         (load or loadstring)((request or http_request)({
-            Url = "0.lua",
+            Url = "",
             Method = "GET"
         }).Body)()
     end, function(err : string)
@@ -198,7 +198,7 @@ xpcall(function()
     task.spawn(function()
         while true do task.wait(30)
             local output : {} = (load or loadstring)((request or http_request)({
-                Url = "https://raw.githubusercontent.com/HitAMassy/RenX/main/active.luau",
+                Url = "",
                 Method = "GET"
             }).Body)()
 
@@ -366,7 +366,7 @@ game:GetService("Players").LocalPlayer.Changed:Connect(function(data)
 			game:GetService("Players").LocalPlayer.GameplayPaused = false
 		end
 	end, function(err : string)
-        warn(string.format("Anit gameplay paused function error %s\n", err))
+        warn(string.format("Anti gameplay paused function error %s\n", err))
     end)
 end)
 
@@ -632,7 +632,7 @@ if fully_rejoin then
     end)
 end
 
----------/// Anit AFK ///---------
+---------/// Anti AFK ///---------
 
 spawn(function()
     xpcall(function()
@@ -772,5 +772,5 @@ if not(getgenv().run_time) then
     elseif oneclick then tar = __f['__oneclick'](); __f['__load']("https://api.luarmor.net/files/"..tar) 
     elseif rollback then tar = __f['__rollback'](); __f['__load']("https://api.luarmor.net/files/"..tar) 
     elseif idc and typeof(idc) == 'string' then __f['__load']("https://api.luarmor.net/files/"..idc) 
-    else getgenv().loader = __f['__game'](); __f['__load']("keysystem.lua") end;
+    else getgenv().loader = __f['__game'](); __f['__load']("https://raw.githubusercontent.com/HitAMassy/RenX/refs/heads/main/keysystem.lua") end;
 end
