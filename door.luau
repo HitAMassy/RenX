@@ -348,7 +348,7 @@ xpcall(function()
             task.spawn(function() playSound("renxstartup", "https://github.com/HitAMassy/RenX/raw/main/renxloadsound.mp3") end)
         end
         LoaderLib:LoadInit({
-            Color = Color3.fromRGB(255, 255, 255),
+            Color = Color3.fromRGB(170, 85, 255),
             Duration = 1.5,
             Size =  87,
         });
