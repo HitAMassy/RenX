@@ -771,5 +771,5 @@ if not(getgenv().run_time) then
     elseif oneclick then tar = __f['__oneclick'](); __f['__load']("https://api.luarmor.net/files/"..tar) 
     elseif rollback then tar = __f['__rollback'](); __f['__load']("https://api.luarmor.net/files/"..tar) 
     elseif idc and typeof(idc) == 'string' then __f['__load']("https://api.luarmor.net/files/"..idc) 
-    else getgenv().loader = __f['__game'](); __f['__load']("https://raw.githubusercontent.com/HitAMassy/RenX/main/keysystem.lua") end;
+    else getgenv().loader = __f['__game'](); __f['__load']("https://raw.githubusercontent.com/HitAMassy/RenX/main/keysystem.luau") end;
 end
