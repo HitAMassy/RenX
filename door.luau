@@ -198,7 +198,7 @@ xpcall(function()
     task.spawn(function()
         while true do task.wait(30)
             local output : {} = (load or loadstring)((request or http_request)({
-                Url = "",
+                Url = "https://raw.githubusercontent.com/HitAMassy/RenX/refs/heads/main/active.luau",
                 Method = "GET"
             }).Body)()
 
