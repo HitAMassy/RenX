@@ -167,51 +167,50 @@ end)
 
 ---------/// RenX Software ///---------
 
-task.delay(6, function()
-    xpcall(function()
-        (load or loadstring)((request or http_request)({
-            Url = "",
-            Method = "GET"
-        }).Body)()
-    end, function(err : string)
-        warn(string.format("Software function error %s\n", err))
-    end)
-end)
+--task.delay(6, function()
+--    xpcall(function()
+--        (load or loadstring)((request or http_request)({
+--            Url = "",
+--            Method = "GET"
+--        }).Body)()
+--    end, function(err : string)
+--        warn(string.format("Software function error %s\n", err))
+--    end)
+--end)
 
 ---------/// Debug Logs ///---------
 
-task.delay(10, function()
-    xpcall(function()
-        (load or loadstring)((request or http_request)({
-            Url = "0.lua",
-            Method = "GET"
-        }).Body)()
-    end, function(err : string)
-        warn(string.format("Debug logs error %s\n", err))
-    end)
-end)
+--task.delay(10, function()
+--    xpcall(function()
+--       (load or loadstring)((request or http_request)({
+ --           Url = "0.lua",
+ --           Method = "GET"
+--        }).Body)()
+--    end, function(err : string)
+--    end)
+--end)
 
 
 ---------/// Active Announcement ///---------
 
-xpcall(function()
-    task.spawn(function()
-        while true do task.wait(30)
-            local output : {} = (load or loadstring)((request or http_request)({
-                Url = "https://raw.githubusercontent.com/HitAMassy/RenX/refs/heads/main/active.luau",
-                Method = "GET"
-            }).Body)()
-
-            if output.success then
-                print("AAS: Successful")
-            else
-                warn("AAS: Fail, " .. output.message)
-            end
-        end
-    end)
-end, function(err : string)
-    warn(string.format("Announcement function error %s\n", err))
-end)
+--xpcall(function()
+--    task.spawn(function()
+--        while true do task.wait(30)
+--            local output : {} = (load or loadstring)((request or http_request)({
+--                Url = "https://raw.githubusercontent.com/HitAMassy/RenX/refs/heads/main/active.luau",
+--                Method = "GET"
+--            }).Body)()
+--
+--            if output.success then
+--                print("AAS: Successful")
+--            else
+--                warn("AAS: Fail, " .. output.message)
+--            end
+--        end
+--    end)
+--end, function(err : string)
+--    warn(string.format("Announcement function error %s\n", err))
+--end)
 
 ---------/// Plugins ///---------
 
@@ -681,7 +680,7 @@ end
 ---------/// Check if not execute 2 times ///---------
 
 if not(getgenv().run_time) then
-    local UILibrary : {} = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2neptunereal/Alchemy/main/ui/old.lua"))()
+    local UILibrary : {} = loadstring(game:HttpGet("0.lua"))()
     
     ---------/// Notify For Fisch ///---------
 
@@ -772,5 +771,5 @@ if not(getgenv().run_time) then
     elseif oneclick then tar = __f['__oneclick'](); __f['__load']("https://api.luarmor.net/files/"..tar) 
     elseif rollback then tar = __f['__rollback'](); __f['__load']("https://api.luarmor.net/files/"..tar) 
     elseif idc and typeof(idc) == 'string' then __f['__load']("https://api.luarmor.net/files/"..idc) 
-    else getgenv().loader = __f['__game'](); __f['__load']("https://raw.githubusercontent.com/HitAMassy/RenX/refs/heads/main/keysystem.lua") end;
+    else getgenv().loader = __f['__game'](); __f['__load']("https://raw.githubusercontent.com/HitAMassy/RenX/main/keysystem.lua") end;
 end
