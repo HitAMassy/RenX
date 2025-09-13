@@ -695,3 +695,4 @@ end)
 	if status.code == "KEY_VALID" then
 		wait(2)
 		ScreenGui:Destroy()
+	end
